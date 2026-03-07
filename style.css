@@ -1,0 +1,325 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fef1e6;
+  color: #5c4033;
+  line-height: 1.6;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ===== Section Titles ===== */
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #5c4033;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* ===== Creative Top Header ===== */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 2px solid #5c4033; 
+  margin-bottom: 30px;
+}
+
+.header-left span {
+  font-weight: bold;
+  font-size: 20px;
+  color: #5c4033;
+}
+
+.header-right span {
+  font-size: 20px;
+  color: #5c4033;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  margin-top: 40px;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; 
+  gap: 30px;
+}
+
+/* Teks kiri */
+.hero-left {
+  flex: 1;
+  min-width: 200px;
+  color: #5c4033;
+  text-align: right; 
+}
+
+.hero-left .greeting {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.hero-left .name {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.hero-left .welcome {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Foto tengah */
+.hero-image {
+  flex: 0 0 250px;
+  width: 250px;
+  height: 305px;
+  border: 2px solid #5c4033; 
+  box-sizing: border-box;
+  box-shadow: 0 0 20px 5px rgba(92, 64, 51, 0.6); 
+  transition: box-shadow 0.3s ease;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Teks kanan */
+.hero-right {
+  flex: 1;
+  min-width: 200px;
+  color: #5c4033;
+  text-align: left; /* teks rata kiri ke foto */
+}
+
+.hero-right p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.hero-right .hero-description {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left, .hero-right {
+    text-align: center;
+  }
+}
+
+
+/* ===== About Section ===== */
+.about-section .about-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+  align-items: center;
+}
+
+.about-section .avatar {
+  flex: 0 0 200px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.about-section .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-section .about-text {
+  flex: 1;
+  font-size: 20px;
+}
+
+/* ===== Skills Section ===== */
+.skills-section .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skills-section .card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #5c4033;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  font-size: 20px;
+}
+
+.skills-section .card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+
+.skills-section .card:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Tools Section ===== */
+.tools-section .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.tools-section .card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #5c4033;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  font-size: 20px;
+}
+
+.tools-section .card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+
+.tools-section .card:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Project Section ===== */
+.project-section .grid {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.project-section .card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px solid #5c4033;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: left;
+  min-height: 160px;
+}
+
+.project-section .card-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.project-section .card p,
+.project-section .card ul {
+  font-size: 20px;
+  padding-left: 20px; 
+  margin: 0; 
+  list-style-position: inside;
+  line-height: 1,4;
+}
+
+.project-section .card ul li {
+  margin-bottom: 6px;  
+}
+
+/* ===== Work Section ===== */
+.work-section .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.work-section .card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px solid #5c4033;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: left;
+  min-height: 160px;
+}
+
+.work-section .card-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.work-section .card p {
+  font-size: 20px;
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+  margin-top: 40px;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 2px solid #5c4033;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.contact-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  color: #5c4033; 
+}
+  
+.contact-icon {
+  font-size: 30px; 
+}
+
+
+
