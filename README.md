@@ -3,16 +3,15 @@
 Website ini merupakan portfolio pribadi yang dibuat menggunakan **HTML** dan **CSS** untuk menampilkan informasi diri, skill, project, serta pengalaman kerja.
 
 ## ✨ Deskripsi
-Portfolio ini dibuat dengan desain sederhana, modern, dan responsif. Website ini bertujuan untuk memperkenalkan profil Naila Fitria sebagai mahasiswa Manajemen Informatika yang tertarik pada bidang **UI/UX Design** dan **Front-End Web Development**.
+Website ini merupakan portfolio pribadi  saya Naila Fitria, seorang mahasiswa aktif Program Studi D4 Manajemen Informatika di Universitas Negeri Surabaya, yang tertarik di bidang UI/UX dan Web Development. Website ini dibuat untuk menampilkan profil, skill, pengalaman project, pengalaman kerja, serta informasi kontak, sehingga pengunjung atau calon klien/magang bisa mengenal kemampuan dan portofolio Naila dengan cepat.
 
 ## 🚀 Fitur Utama
-- Hero section (perkenalan singkat)
-- About Me (informasi diri)
-- Skills (kemampuan teknis)
-- Tools (tools yang digunakan)
-- Project (daftar proyek yang pernah dibuat)
-- Work Experience (pengalaman kerja/organisasi)
-- Contact (informasi kontak)
+- Halaman Utama (Home / Hero Section)
+- About Me
+- Skills & Tools 
+- Project / Pengalaman Project
+- Work Experience / Pengalaman Kerja
+- Contact Me
 
 ## 🛠️ Teknologi yang Digunakan
 - HTML5
